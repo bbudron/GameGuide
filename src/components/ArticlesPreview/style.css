@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: -195px;
+    width: 100%;
+    background-color: rgb(72, 158, 69);
+    color: white;
+    text-align: center;
+    border-top: 2px solid black;
+    -webkit-transition: padding-bottom 1s, width 1s, height 1s, font-size 2s;
+    transition: padding-bottom 1s, width 1s, height 1s, font-size 2s;
+}
+
+#footer {
+    background-image: url("pattern.png");
+}
+
+.footer:hover {
+    padding-bottom: 210px;
+    border-top: 2px solid black;
+}
+
+.footer:hover > .articles-collapsed > .articlePreview {
+    width: 250px;
+    height: 200px;
+}
+
+.articles-collapsed {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
+    text-align: center;
+    font-size: 20px;
+    justify-content: space-evenly;
+    -webkit-transition: width 1s, height 1s;
+    transition: width 1s, height 1s;
+}
+
+.articlePreview {
+    background: rgba(255, 255, 255, 0.55);
+    width: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    text-align: left;
+    border-radius: 4px;
+    -webkit-transition: width 1s, height 1s;
+    transition: width 1s, height 1s;
+}
+
+.articlePreview:hover {
+    cursor: pointer;
+}
+
+.articlePreviewImage {
+    max-width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.articlePreviewTitle {
+    border-radius: 4px;
+    margin-top: 0px;
+    font-size: 10px;
+    letter-spacing: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 16px;
+    height: auto;
+}
+
+.footerTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+}
+
+.footer:hover > .footerTitle> p > p{
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+#arrows {
+    padding: 15px;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.footerTitleText {
+    display: flex;
+    flex-direction: column;
+    font-family: "Press Start 2P";
+    color: white;
+    font-size: 12px;
+    -webkit-transition: font-size 1s;
+    transition: font-size 1s;
+}
+
+.footer:hover > .footerTitle > #arrows {
+    opacity: 0;
+}
+
+
+.footer-view-more {
+    margin-top: 15px;
+    display: none;
+}
+
+.footer:hover  > .footer-view-more {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer:hover > div  .footer-view-more-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+	height: 24px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid white;
+	border-radius: 50px;
+	color: white;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: "Poppins";
+}

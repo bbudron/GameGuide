@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+.recent-searches-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.recent-search-title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-weight: 1500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+}
+
+.recent-search-item {
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    align-content: baseline;
+    cursor: pointer;
+}
+
+.recent-search-term {
+    color: white;
+}
+
+.svg-point {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(50, 177, 45);
+    border-radius: 100%;
+    margin-right: 7px;
+}
+
+.svg-point:hover {
+    background-color: rgb(56, 146, 53);
+}
+
+.recent-searches-list {
+    align-content: left;
+    font-family: "Ubuntu";
+    font-weight: 400;
+    letter-spacing: .5px;
+}

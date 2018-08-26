@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.game-title {
+    font-size: 24px;
+    font-family: "Poppins";
+    font-weight: bold;
+    padding: 14px 0px 20px 0px;
+    line-height: 30px;
+}
+
+.game-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-image {
+    width: 300px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.game-rating {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    max-height: 200px;
+    font-family: "Poppins";
+}
+
+.game-rating-star-container {
+    display: inline-block;
+    width: 20px;
+}
+
+.game-summary {
+    font-family: "Poppins";
+    padding: 15px 15px 0px 15px;
+    font-size: 16px;
+}
+
+.game-data-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 20px 0px 10px 0px;
+    padding: 0px 10%;
+}
+
+.game-release-date {
+    font-family: "Poppins";
+    color: white;
+    display: inline;
+}
+
+.game-source {
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.game-indent {
+    display: inline;
+    color: black;
+}
+
+.game-source:hover {
+    text-decoration: underline;
+}
+
+.game-videos {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    display: inline;
+}
+
+.game-video {
+    max-height: 200px;
+    display: inline;
+    color: white;
+}

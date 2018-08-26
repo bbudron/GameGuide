@@ -1,0 +1,63 @@
+
+.game {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    border: none;
+}
+
+.gameSelectionContainer {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 600px;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+    .game {
+      min-width: 500px;
+    }
+  }
+
+.games-header {
+    font-family: "Poppins";
+    color: white;
+}
+
+.loader {
+    margin-top: 50px;
+}
+
+
+.game-home-button {
+    display: block;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.left-game-arrow {
+   
+    cursor: pointer;
+}
+
+.right-game-arrow {
+    
+    cursor: pointer;
+}
+
+.articles-button:hover {
+    opacity: .75;
+}
+
+.articles-button {
+    cursor: pointer;
+}
+
+.tab-space {
+    width: 55px;
+}

@@ -1,0 +1,55 @@
+.not-found {
+    color: white;
+}
+
+.game-choice {
+    border: 1px solid black;
+    background: linear-gradient(to bottom right, rgb(77, 240, 86), rgb(21, 140, 27));
+    border-radius: 4px;
+    width: 190px;
+    height: 220px;
+    -webkit-transition: width 1s, height 1s;
+    transition: width 1s, height 1s;
+    margin-bottom: 5px;
+    position:relative
+}
+
+.game-choice-image {
+    max-width: 200px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.game-choice-title {
+    margin-top: 10px;
+    background: white;
+    color: black;
+    position:absolute;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.game-choice-title-error {
+    margin-top: 10px;
+    background: white;
+    color: black;
+    position:absolute;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.gameSelectionContainer {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 600px;
+    justify-content: space-around;
+    color: white;
+    margin-bottom: 100px;
+    margin-top: 10px;
+}

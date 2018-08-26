@@ -1,0 +1,20 @@
+.article-gallery-title {
+    font-family: "Press Start 2P";
+    color: white;
+    font-size: 12px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.article-gallery {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: static;
+    max-width: 500px;
+    min-width: 385px;
+}
+
+.loader {
+    text-align: center;
+    margin-top: 50px;
+}

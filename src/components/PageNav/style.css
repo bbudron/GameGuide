@@ -1,0 +1,38 @@
+.page-nav {
+    display:block;
+    width: 100%;
+}
+
+
+.arrow {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow:hover {
+background-color: black;
+}
+
+.left-arrow {
+padding: 15px;
+-webkit-transition: opacity 1s;
+transition: opacity 1s;
+opacity: 1;
+-ms-transform: rotate(90deg); /* IE 9 */
+-webkit-transform: rotate(90deg); /* Safari */
+transform: rotate(90deg);
+cursor: pointer;
+}
+
+.right-arrow {
+padding: 15px;
+-webkit-transition: opacity 1s;
+transition: opacity 1s;
+opacity: 1;
+-ms-transform: rotate(-90deg); /* IE 9 */
+-webkit-transform: rotate(-90deg); /* Safari */
+transform: rotate(-90deg);
+cursor: pointer;
+}
