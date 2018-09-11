@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600');
 
+.footer-home {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(72, 158, 69);
+    color: white;
+    text-align: center;
+    border-top: 2px solid black;
+    -webkit-transition: padding-bottom 1s, width 1s, height 1s, font-size 2s;
+    transition: padding-bottom 1s, width 1s, height 1s, font-size 2s;
+}
+
 .footer {
     position: fixed;
     left: 0;
@@ -38,6 +51,22 @@
     justify-content: space-evenly;
     -webkit-transition: width 1s, height 1s;
     transition: width 1s, height 1s;
+}
+
+.articlePreview-home {
+    background: rgba(255, 255, 255, 0.55);
+    width: 250px;
+    height: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    text-align: left;
+    border-radius: 4px;
+    -webkit-transition: width 1s, height 1s;
+    transition: width 1s, height 1s;
+}
+
+.articlePreview-home:hover {
+    cursor: pointer;
 }
 
 .articlePreview {
@@ -113,11 +142,35 @@
     display: none;
 }
 
+.footer-home  > .footer-view-more {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer:hover  > .footer-view-more {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+}
+
+.footer-view-more-text-home {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+	height: 24px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid white;
+	border-radius: 50px;
+	color: white;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: "Poppins";
 }
 
 .footer:hover > div  .footer-view-more-text {

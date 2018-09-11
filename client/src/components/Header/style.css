@@ -9,7 +9,13 @@
 .header1 {
   -webkit-transition: margin-top 1s;
   transition: margin-top 1s;
-  margin-top: 200px;
+  margin-top: 30px;
+}
+
+@media (min-height: 600px) {
+  .header1 {
+    margin-top: 100px;
+  }
 }
 
 .header2 {

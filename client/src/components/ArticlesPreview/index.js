@@ -22,14 +22,15 @@ class ArticlesPreviewWO extends Component {
 	}
 
 	render() {
+		const curPage = this.props.location.pathname.length === 1 ? "-home" : "";
 		return (
-			<div className="footer" id="footer" onClick={this.articlePageSelect}>
+			<div className={`footer${curPage}`} id="footer" onClick={this.articlePageSelect}>
 			<h3 className="footerTitle">{arrow}<div className="footerTitleText">Latest News In Gaming</div>{arrow}</h3>
 			<div className="articles-collapsed">
 				{this.props.articles.map((article, i) => {
 					if(i < 3) {
 					return (
-						<div key={i} id={i} onClick={this.articleSelect} className="articlePreview">
+						<div key={i} id={i} onClick={this.articleSelect} className={`articlePreview${curPage}`}>
 						<img id={i} className="articlePreviewImage" src={article.image} alt={article.title} />
 						<div id={i} className="articlePreviewTitle">{article.title}</div>
 						</div>
@@ -38,7 +39,7 @@ class ArticlesPreviewWO extends Component {
 			</div>
 			<div className="footer-view-more">
 				<Link to = {`/articles`}>
-					<p className="footer-view-more-text">view more</p>
+					<p className={`footer-view-more-text${curPage}`}>view more</p>
 				</Link>
 			</div>
 			</div>
